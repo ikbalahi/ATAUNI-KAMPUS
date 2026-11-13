@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173e4c">
+  <meta name="description" content="Atatürk Üniversitesine yeni başlayanlar için kampüs haritası, olanaklar, başvuru kanalları ve 2026–2027 akademik takvimi.">
+  <title>Kampüste İlk Adım | Atatürk Üniversitesi Öğrenci Rehberi</title>
+  <link rel="preload" href="./assets/fonts/WorkSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./style.css?v=20261029">
+  <script src="./map-core.js?v=20261029" defer></script>
+  <script src="./app.js?v=20261029" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="topbar">
+    <a class="wordmark" href="#baslangic"><span>KAMPÜSTE İLK ADIM<small>ATATÜRK ÜNİVERSİTESİ · ÖĞRENCİ REHBERİ</small></span></a>
+    <nav aria-label="Ana gezinme">
+      <a href="#baslangic" class="active" aria-current="page">Üniversite hakkında</a>
+      <a href="#harita">Kampüs haritası</a>
+      <a href="#basvuru">Nereye başvurmalıyım?</a>
+      <a href="#kaynaklar">Takvim ve kaynaklar</a>
+    </nav>
+    <a class="urgent" href="tel:112" aria-label="112 Acil Çağrı Merkezini ara">Acil: 112</a>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="baslangic" class="tab active" aria-labelledby="welcome-title">
+      <div class="welcome">
+        <div class="welcome-copy">
+          <p class="eyebrow">ATATÜRK ÜNİVERSİTESİ · ERZURUM</p>
+          <h1 id="welcome-title">1957'den bugüne<br>Doğu'nun üniversitesi.</h1>
+          <p class="lede">Köklü tarihçesi ve geniş yerleşkesiyle Atatürk Üniversitesini tanıyın. <br>Yerinizi bulun, olanakları keşfedin.</p>
+          <a href="#harita" class="primary">Kampüs haritasını aç <span aria-hidden="true">↗</span></a>
+          <p class="welcome-caption">Erzurum merkez yerleşkesi: kütüphane, hastane, spor ve öğrenci yaşamı tek çatıda.</p>
+        </div>
+        <a class="welcome-map" href="#harita" aria-label="Ayrıntılı kampüs haritasına geç">
+          <div id="mini-map" aria-hidden="true"></div>
+          <div class="mini-caption"><span>MERKEZ YERLEŞKESİ</span><strong>Bir noktayı seçerek başlayın.</strong></div>
+        </a>
+      </div>
+      <div class="quick-grid">
+        <a href="https://atauni.edu.tr/fakulteler/" target="_blank" rel="noopener noreferrer"><span class="eyebrow">ÜNİVERSİTEYİ TANIYIN</span><h2>Fakülteler ve birimler</h2><span>23 fakülte, 9 enstitü ve yüksekokullar <b aria-hidden="true">↗</b></span></a>
+        <a href="#basvuru?kutuphane"><span class="eyebrow">KAMPÜSTE YAŞAM</span><h2>Olanakları keşfedin.</h2><span>Kütüphane, yemek, kulüpler ve spor <b aria-hidden="true">↗</b></span></a>
+        <a href="#basvuru?pdr"><span class="eyebrow">İHTİYAÇ DUYDUĞUNUZDA</span><h2>Destek bir adım ötede.</h2><span>Danışmanlık, erişilebilirlik ve güvenlik <b aria-hidden="true">↗</b></span></a>
+      </div>
+      <section class="uni-info" aria-labelledby="uni-title">
+        <div class="section-heading"><div><p class="eyebrow">ATATÜRK ÜNİVERSİTESİ</p><h2 id="uni-title">Üniversite hakkında</h2></div></div>
+        <div class="uni-grid">
+          <article class="uni-card">
+            <h3>Köklü bir tarihçe</h3>
+            <p>Mustafa Kemal Atatürk'ün 1937'de TBMM'de Doğu Anadolu'ya büyük bir üniversite kurulması gerektiğine işaret etmesinin ardından, 6990 sayılı kanunla 7 Haziran 1957'de resmen kuruldu. Eğitime 17 Kasım 1958'de Ziraat ve Fen-Edebiyat fakülteleriyle başlandı.</p>
+            <div class="inline-sources"><a href="https://aday.atauni.edu.tr/" target="_blank" rel="noopener noreferrer">Üniversite tanıtım rehberi</a></div>
+          </article>
+          <article class="uni-card">
+            <h3>Bugünkü yapı</h3>
+            <p>Doğu Anadolu'nun ilk yükseköğretim kurumu olma özelliğini taşır. Bugün 23 fakülte, 9 enstitü, 12 meslek yüksekokulu, 1 yüksekokul ve 1 devlet konservatuvarıyla eğitim verir.</p>
+            <div class="inline-sources"><a href="https://aday.atauni.edu.tr/" target="_blank" rel="noopener noreferrer">Üniversite tanıtım rehberi</a><a href="https://atauni.edu.tr/fakulteler/" target="_blank" rel="noopener noreferrer">Fakülteler dizini</a></div>
+          </article>
+          <article class="uni-card">
+            <h3>Yerleşke ve olanaklar</h3>
+            <p>Erzurum merkez yerleşkesi; Fuat Sezgin Merkez Kütüphanesi, Araştırma Hastanesi, spor ve kültür tesisleriyle şehir içinde bütün bir kampüs yaşamı sunar.</p>
+            <div class="inline-sources"><a href="https://atauni.edu.tr/kutuphane-ve-dokumantasyon-daire-baskanligi/" target="_blank" rel="noopener noreferrer">Kütüphane</a><a href="https://hastane.atauni.edu.tr/randevu-alma-rehberi/" target="_blank" rel="noopener noreferrer">Hastane</a></div>
+          </article>
+          <article class="uni-card">
+            <h3>Öğrenci yaşamı</h3>
+            <p>Öğrenci kulüpleri, sosyal tesisler, kariyer planlama ve psikolojik danışmanlık hizmetleriyle üniversite yaşamı derslerden ibaret değildir.</p>
+            <div class="inline-sources"><a href="https://kulupler.atauni.edu.tr/" target="_blank" rel="noopener noreferrer">Öğrenci kulüpleri</a><a href="https://atauni.edu.tr/kariyer/" target="_blank" rel="noopener noreferrer">Kariyer Merkezi</a></div>
+          </article>
+        </div>
+      </section>
+      <div class="home-contacts">
+        <div><p class="eyebrow">ELİNİZİN ALTINDA OLSUN</p><h2>Önemli iletişimler</h2></div>
+        <div><span>Öğrenci İşleri</span><a href="tel:+904422311404">0442 231 14 04</a><a class="fine" href="https://atauni.edu.tr/ogrenci-isleri-daire-baskanligi/iletisim/" target="_blank" rel="noopener noreferrer">Resmî iletişim</a></div>
+        <div><span>Kampüs Güvenliği</span><a href="tel:+904422313333">0442 231 33 33</a><a class="fine" href="https://atauni.edu.tr/koruma-ve-guvenlik-mudurlugu/iletisim/" target="_blank" rel="noopener noreferrer">Resmî iletişim</a></div>
+        <div><span>Psikolojik Danışmanlık</span><a href="tel:+904422311883">0442 231 18 83</a><a class="fine" href="https://atauni.edu.tr/psikolojik-danisma-ve-rehberlik-uygulama-ve-arastirma-merkezi/basvurumu-nasil-yaparim/" target="_blank" rel="noopener noreferrer">Resmî başvuru</a></div>
+      </div>
+    </section>
+    <section id="harita" class="tab" aria-labelledby="map-title">
+      <div class="intro"><div><p class="eyebrow">ERZURUM MERKEZ YERLEŞKESİ VE YAKIN ÇEVRESİ</p><h1 id="map-title">Kampüste yerinizi bulun.</h1><p>Adla arayın, kategoriyi seçin, yerin ayrıntısına ulaşın.</p></div><a id="download-top" class="outline" href="./assets/ayrintili-kampus-haritasi.png" download target="_blank" rel="noopener">Kampüs haritasını indir</a></div>
+      <div class="map-shell">
+        <aside class="sidebar" aria-label="Yer arama ve sonuçlar">
+          <label for="place-search" class="search-label">Nereye gitmek istiyorsunuz?</label>
+          <input id="place-search" type="search" placeholder="Öğrenci işleri, kütüphane, DAYTAM…" autocomplete="off">
+          <div id="map-filters" class="filter-row" aria-label="Yer kategorileri"></div>
+          <div class="results-heading"><span id="place-count" aria-live="polite"></span><button id="clear-map" class="text-button">Filtreleri temizle</button></div>
+          <div id="places" class="results"></div>
+          <p class="sidebar-foot">Numaralar indirilebilir haritayla aynıdır. Bir yeri seçtiğinizde harita o konuma odaklanır.</p>
+        </aside>
+        <div class="map-column">
+          <div class="map-stage">
+            <svg id="map" role="group" aria-label="Atatürk Üniversitesi etkileşimli kampüs haritası" viewBox="0 0 1400 900"></svg>
+            <div class="map-view-name" id="map-view-name">Tüm yerleşke</div>
+            <div class="map-controls" aria-label="Harita denetimleri">
+              <button id="zoom-in" aria-label="Haritayı yakınlaştır" title="Yakınlaştır">+</button>
+              <button id="zoom-out" aria-label="Haritayı uzaklaştır" title="Uzaklaştır">−</button>
+            </div>
+            <div class="view-controls"><button id="view-full" aria-pressed="true">Tüm yerleşke</button><button id="view-core" aria-pressed="false">Merkez hizmetler</button></div>
+            <div class="map-tools"><button id="locate">Konumum</button><button id="reset-view">Görünümü sıfırla</button></div>
+            <div class="compass" aria-hidden="true"><b>K</b><span>↑</span></div>
+            <div class="scale"><span id="scale-line"></span><b id="scale-text"></b></div>
+          </div>
+          <div id="map-detail" class="map-detail" aria-live="polite"></div>
+        </div>
+      </div>
+      <p id="map-message" class="map-message" role="status"></p>
+      <details class="scope-note"><summary>Aradığım yer haritada yoksa?</summary><p>Bu görünüm Erzurum merkez yerleşkesi ve yakın çevresini kapsar; Oltu, Tortum ve diğer ilçe yerleşkeleri aynı haritanın içinde değildir. PDR, Engelli Öğrenci Birimi, Kariyer Merkezi, bazı yurtlar ve Garaj Okuma Salonu için kesin güncel giriş koordinatı doğrulanamadığından varsayımsal işaret eklenmemiştir. İlgili iletişim kanalını başvuru rehberinden açabilirsiniz.</p><a href="#basvuru">Başvuru rehberine geç</a></details>
+    </section>
+    <section id="basvuru" class="tab reading" aria-labelledby="service-title">
+      <p class="eyebrow">DOĞRU YERE, DAHA KOLAY</p><h1 id="service-title">Nereye başvurmalıyım?</h1>
+      <p class="lede">İhtiyacınızı bulun; ne yapacağınızı, kiminle görüşeceğinizi ve resmî başvuru kanalını aynı yerde görün.</p>
+      <label class="search-label" for="service-search">Bir konu veya hizmet arayın</label>
+      <input id="service-search" type="search" placeholder="Burs, internet, staj, yurt, psikolojik destek…" autocomplete="off">
+      <div id="service-filters" class="filter-row" aria-label="Hizmet kategorileri"></div>
+      <p id="service-count" class="fine" aria-live="polite"></p><div id="services" class="services"></div>
+      <aside class="emergency-box"><div><p class="eyebrow">ACİL DURUM</p><h2>112</h2></div><div><p>Yaşamı tehdit eden sağlık sorunu, yangın veya acil güvenlik durumunda 112’yi arayın; konumunuzu ve olayın ne olduğunu açıkça anlatın.</p><a href="https://www.112.gov.tr/" target="_blank" rel="noopener noreferrer">112 Acil Çağrı Merkezi</a></div><a class="urgent" href="tel:112">112’yi ara</a></aside>
+    </section>
+    <section id="kaynaklar" class="tab reading" aria-labelledby="calendar-title">
+      <p class="eyebrow">2026–2027 EĞİTİM-ÖĞRETİM YILI</p><h1 id="calendar-title">Takviminiz ve resmî kanallar.</h1>
+      <p class="fine">Hukuk Fakültesinin yıllık dersleri ve bazı özel işlemler için PDF’de ek hükümler bulunur; kendi biriminizin sınav programını ayrıca kontrol edin. Dar ekranda tabloları görmek için yana kaydırın.</p>
+      <div class="table-wrap" role="region" aria-label="Genel akademik takvim; dar ekranda yatay kaydırılabilir" tabindex="0"><table><caption>Akademik takvim</caption><thead><tr><th scope="col">İşlem</th><th scope="col">Güz</th><th scope="col">Bahar</th></tr></thead><tbody id="calendar-rows"></tbody></table></div>
+      <div class="table-wrap" role="region" aria-label="Tıp Fakültesi akademik takvimi; dar ekranda yatay kaydırılabilir" tabindex="0"><table><caption>Tıp Fakültesi akademik takvimi</caption><thead><tr><th scope="col">İşlem</th><th scope="col">I–III. Sınıf</th><th scope="col">IV. Sınıf</th><th scope="col">V. Sınıf</th><th scope="col">VI. Sınıf</th></tr></thead><tbody id="calendar-tip-rows"></tbody></table></div>
+      <p class="fine">Tıp Fakültesi VI. sınıf (Aile Hekimliği dönemi) eğitimi yıllık programla yürütülür.</p>
+      <div class="table-wrap" role="region" aria-label="Diş Hekimliği Fakültesi akademik takvimi; dar ekranda yatay kaydırılabilir" tabindex="0"><table><caption>Diş Hekimliği Fakültesi akademik takvimi · I–IV. Sınıflar</caption><thead><tr><th scope="col">İşlem</th><th scope="col">Güz</th><th scope="col">Bahar</th></tr></thead><tbody id="calendar-dis-rows"></tbody></table></div>
+      <div class="table-wrap" role="region" aria-label="Diş Hekimliği Fakültesi V. sınıf akademik takvimi; dar ekranda yatay kaydırılabilir" tabindex="0"><table><caption>Diş Hekimliği Fakültesi akademik takvimi · V. Sınıf</caption><thead><tr><th scope="col">İşlem</th><th scope="col">Güz</th><th scope="col">Bahar</th></tr></thead><tbody id="calendar-dis5-rows"></tbody></table></div>
+      <p class="source-line">Açık ve Uzaktan Öğretim fakültelerinin akademik takvimi ve sonradan yayımlanabilecek değişiklikler için <a href="https://atauni.edu.tr/ogrenci-isleri-daire-baskanligi/akademik-takvim/" target="_blank" rel="noopener noreferrer">Öğrenci İşleri takvim sayfasını</a> izleyin.</p>
+      <section class="source-section"><div class="section-heading"><div><p class="eyebrow">GEREKTİĞİNDE DOĞRUDAN KAYNAĞINA GİDİN</p><h2>Resmî bağlantılar ve veri kaynakları</h2></div></div><p class="fine">Ücretler, seanslar, başvuru tarihleri ve hizmet koşulları değişebilir. Bağlantı açılmazsa adresi kopyalayarak tarayıcınızda açın.</p><div id="sources"></div><p id="copy-message" role="status" class="fine"></p></section>
+    </section>
+  </main>
+  <footer class="site-footer"><span>KAMPÜSE HOŞ GELDİN<small>Atatürk Üniversitesi öğrenci rehberi</small></span></footer>
+  <noscript><p class="noscript">Harita ve arama için JavaScript gerekir. <a href="https://atauni.edu.tr/" target="_blank" rel="noopener noreferrer">Atatürk Üniversitesi resmî sitesine</a> ulaşabilirsiniz.</p></noscript>
+</body>
+</html>
